@@ -1,0 +1,56 @@
+.header-container{
+    height: 150px;
+}
+
+.header{
+    margin: 0 120px;
+    height: 100%;
+}
+
+.header-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.header-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.header-logo{
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.header-nav{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav>li{
+    display: inline;
+    padding-left: 50px;
+    font-size: 16px;
+}
+
+.header-nav>li>a{
+    text-decoration: none;
+    color: #989AA4;
+    cursor: pointer;
+}
+
+.header-nav>li>a.selected{
+    color: #7368FF;
+    cursor: pointer;
+}
