@@ -3,6 +3,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+hr{
+  border: 0;
+  border-top: 1px solid #E2E8ED;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

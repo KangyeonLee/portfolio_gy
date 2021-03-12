@@ -15,7 +15,7 @@ export default function header(){
                 <div className="header-right">
                     <ul className="header-nav">
                         <li>
-                            <NavLink to="/1" activeClassName="selected">PASSIONS</NavLink>
+                            <NavLink to="/home" activeClassName="selected">PASSIONS</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about" activeClassName="selected">ABOUT</NavLink>

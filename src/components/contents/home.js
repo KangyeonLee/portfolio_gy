@@ -27,12 +27,7 @@ export default function Home(){
         type:"Web Application",
         description:"This web app and app provide a viewer facility for web-novels on online"
         },
-        {id:6, title:"HUVLE OFFICIAL WEBSITE",
-        img:"/images/06 degv_thumb.jpg",
-        type:"Web / Mobile web Application",
-        description:"Web app design that is intended to introduce the company of HUVLE"
-        },
-        {id:7, title:"DEA-GU ENGLISH VILLAGE",
+        {id:6, title:"DEA-GU ENGLISH VILLAGE",
         img:"/images/02 heidi__website_thumb.jpg",
         type:"Web / Mobile web Application",
         description:"This web app is managed students' schedule of English village through the web, mobile site"
