@@ -49,7 +49,7 @@ export default function About() {
                 <div className="about-introduction">
                     <div className="about-left-panel">
                         <div className="about-portrait">
-                            <img src={process.env.PUBLIC_URL+"/images/06 degv_thumb.jpg"} width="80%"/>
+                            <img src={process.env.PUBLIC_URL+"/images/0112.jpeg"} width="80%"/>
                         </div>
                         <div className="about-button-container">
                             <a href="mailto:kangyeon.lee.alicia@gmail.com">
