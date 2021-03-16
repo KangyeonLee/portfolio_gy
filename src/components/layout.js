@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Header from './header/header'
 import Home from './contents/home'
 import About from './contents/about'
+import SubPage from './contents/subpage'
 import Footer from './footer/footer'
 
 
@@ -14,6 +15,7 @@ export default function Layout(){
                 <Header></Header>
                 <Route path="/home" component={Home}/>
                 <Route path="/about" component={About}/>
+                <Route path="/project/:id" component={SubPage}/>
                 <hr/>
                 <Footer></Footer>
             </div>
