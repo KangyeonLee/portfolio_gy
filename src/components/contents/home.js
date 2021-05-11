@@ -6,31 +6,26 @@ export default function Home(){
         {id:1, title:"HEIDI MANUFACTURING SOLUTION SYSTEM", 
         img:"/images/01 heidi_thumb.jpg",
         type:"Web Application / App",
-        description:"This web app that dashboard helps employees operate process management systems more efficiently and save time"},
+        description:"This web app is a dashboard that helps employees to operate process management systems more efficiently"},
         {id:2, title:"HEIDI OFFICIAL WEBSITE",
         img:"/images/02 heidi__website_thumb.jpg",
         type:"Web / Mobile web Application",
-        description:"Web app design that is intended to introduce the company of HEIDI"
+        description:"A web app design intended for the company HEIDI introduction"
         },
         {id:3, title:"adKnowva AD MANAGE SYSTEM",
         img:"/images/03 adknowva_dashboard_thumb.jpg",
         type:"Web Application",
-        description:"This web application is managed and controlled that the web, mobile, and apps' advertisement business"
+        description:"Web application design for advertisement management of the web, mobile and apps"
         },
-        {id:4, title:"adKnowva OFFICIAL WEBSITE",
-        img:"/images/04 adknowva_thumb.jpg",
-        type:"Web / Mobile web Application / App",
-        description:"Web app design that is intended to introduce the company of adKnowva which is an advertisement company"
-        },
-        {id:5, title:"WEB-NOVEL VIEWER",
+        {id:4, title:"WEB-NOVEL VIEWER",
         img:"/images/05 webnovel_thumb.jpg",
         type:"Web Application",
-        description:"This web app and app provide a viewer facility for web-novels on online"
+        description:"A web-novel reader app designed for both desktop and mobile."
         },
-        {id:6, title:"DEA-GU ENGLISH VILLAGE",
+        {id:5, title:"DEA-GU ENGLISH VILLAGE",
         img:"/images/02 heidi__website_thumb.jpg",
         type:"Web / Mobile web Application",
-        description:"This web app is managed students' schedule of English village through the web, mobile site"
+        description:"Web app design that is intended to introduce the company of HUVLE"
         }
     ]);
 
@@ -38,7 +33,11 @@ export default function Home(){
         <div className="home-container">
             <div className="home-content">
                 <div className="home-greetings">
-                    <b>This is Gangyeon Lee!</b><br/>
+                    <b>This is <div className="home-color">Gangyeon Lee</div>!</b>
+                    
+                        
+                    
+                    <br/>
                     I am a curious observer,<br/>
                     obsessed with creation,<br/>
                     teams' lubricant,<br/>

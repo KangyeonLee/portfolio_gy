@@ -13,7 +13,7 @@
 }
 
 .sub-title-left-panel{
-    width: 45%;
+    width: 50%;
     font-size: 36px;
     font-weight: bold;
 }
@@ -21,10 +21,11 @@
 .sub-title-left-panel>p{
     margin: 0;
     line-height: 160%;
+    color: #1F1F22 !important;
 }
 
 .sub-title-right-panel{
-    width: 45%;
+    width: 50%;
     font-size: 32px;
     font-weight: normal;
 }
@@ -32,6 +33,7 @@
 .sub-title-right-panel>p{
     margin: 0;
     line-height: 150%;
+    color: #1F1F22 !important;
 }
 
 .sub-title-image{
@@ -87,4 +89,43 @@
     font-size: 28px;
     line-height: 160%;
     color: #6B89AD;
+}
+
+.sub-reseach-detail{
+    display: grid;
+    flex-direction: row;
+    grid-row-gap: 145px;
+}
+
+.sub-reseach-detail-half-column{
+    display: grid;
+    grid-template: auto / 50% 50%;
+    flex-direction: row;
+}
+
+.sub-reseach-detail-1-9-column{
+    display: grid;
+    grid-template: auto / 10% 90%;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.sub-reseach-detail-left{
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.sub-reseach-detail-right{
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.sub-reseach-detail-title{
+    font-size: 22pt;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.sub-reseach-detail-subtitle{
+    padding-bottom: 60px;
 }

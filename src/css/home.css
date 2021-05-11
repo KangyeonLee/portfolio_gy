@@ -12,7 +12,7 @@
     text-align: left;
 }
 
-.home-greetings>b{
+.home-greetings b{
     font-size: 60px;
     line-height: 160%;
 }

@@ -5,19 +5,21 @@ export default function About() {
     const [detail, setDetail] = useState([
         {
             heading: "I am-",
-            paragraph1: `A UI/UX designer from South Korea. 
-        After graduating from The University with a Bachelor degree in Visual Design in Korea. Also, I went to Canada, and I graduated from The College of Seneca with a diploma in Computer Programming.`,
-            paragraph2: `I began my web/App/UI/UX design career for five years in the web design industry, and I designed web or apps in detail pages, contents, and landing pages. `
+            paragraph1: `A UX/UI designer from South Korea.
+            After I got my bachelor degree in Visual Design in Korea. 
+            After I moved to Canada, I graduated from The College of Seneca with a diploma in Computer Programming.`,
+            paragraph2: `I have 5 years of design experience in web, mobile app and UX/UI. My main tasks included designing in detail pages, contents, and landing pages for both desktop and mobile. `
         },
         {
-            heading: "Working stories-",
-            paragraph1: `Firstly, when I started working as a web designer, I was the only designer in my team or company. There was no one to teach me the work process, no one to help me when I was a delay in my work, and no one to ask for help. I encountered everything for was the first time, and I have learned anything by myself. The result is that I can show this portfolio as a UI/UX designer for the past five years. That is why I am confident that I can work through it by myself if it might be left me high and dry.`,
-            paragraph2: `With every working opportunity, I have been striven to enhance and accept new knowledge to fully experience design's culture.`
+            heading: "How my career started-",
+            paragraph1: `First, I’ve started my career as a web designer which corresponded with my major. I was the only designer in my team / company, with no luxury of having a mentor or a senior designer to teach me the work process, or help me out when there was a problem. Yet the projects came in waves demanding me to solve problems and projects I’ve never trained for; I had to do UX and UI design without any training in these fields. After five years of these experiences, I’m happy with the results: a confident designer who self-taught herself how to solve UX/UI problems on the field, and numerous pages of portfolio.`,
+            paragraph2: `With every opportunity given to me, I’m always looking to learn something new from them, and bring my strength of being the teammate who’s positive, efficient and easy to work with.`
         },
         {
             heading: "In future-",
-            paragraph1: `I desire more figuring out the design area and more adopt related working area knowledge.`,
-            paragraph2: `As a designer, I aspire to design memorable works for people. I am highly passionate and motivated about aspects of design, trends, human interaction, and industrial to provide the solution and design with a user-first mentality.`
+            paragraph1: `I desire to figure out more and dig deeper into the study of design and adopt any related knowledge to grow myself as a better designer.`,
+            paragraph2: `As a designer, I aspire to design memorable works for people. 
+            I am highly passionate and motivated about aspects of design, such as market demands, industry trends and user-product interaction to provide the solution and design with a user-first mentality.`
         },
     ])
 
