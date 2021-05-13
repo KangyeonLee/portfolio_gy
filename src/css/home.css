@@ -45,6 +45,10 @@
     cursor: pointer;
 }
 
+.home-contents-container a{
+    text-decoration: none;
+}
+
 .content{
     display: flex;
     flex-direction: row;

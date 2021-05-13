@@ -2,6 +2,12 @@
     width: 100%;
 }
 
+
+.sub-container *{
+    color: #3E3F44;
+    line-height: 180%;
+}
+
 .sub-title{
     padding: 100px 0;
     margin: 0 auto;
@@ -47,6 +53,7 @@
 .sub-component{
     width: 80%;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 .sub-project-properties{
@@ -79,53 +86,99 @@
     margin: 0;
 }
 
-.sub-research{
-    padding-top: 200px;
+.sub-section{
+    padding: 150px 0;
     text-align: left;
 }
 
-.sub-research>p{
+.sub-section>p{
     font-weight: 600;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 160%;
     color: #6B89AD;
+    margin-bottom: 40px;
 }
 
-.sub-reseach-detail{
+.sub-section-detail{
     display: grid;
     flex-direction: row;
     grid-row-gap: 145px;
 }
 
-.sub-reseach-detail-half-column{
+.sub-section-detail-half-column{
     display: grid;
     grid-template: auto / 50% 50%;
     flex-direction: row;
 }
 
-.sub-reseach-detail-1-9-column{
-    display: grid;
-    grid-template: auto / 10% 90%;
-    flex-direction: row;
+.sub-section-detail-column-string{
     padding-bottom: 40px;
 }
 
-.sub-reseach-detail-left{
-    font-size: 22pt;
+.sub-section-detail-image{
+    display: inline-block;
+    float: left;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.sub-section-detail-string{
+    display:flow-root;
+}
+
+.left-padding-100{
+    padding-left: 100px;
+}
+
+.sub-section-detail-left{
+    font-size: 28px;
     font-weight: 600;
 }
 
-.sub-reseach-detail-right{
+.sub-section-detail-right{
     font-size: 12pt;
     font-weight: 400;
 }
 
-.sub-reseach-detail-title{
+.sub-section-detail-title{
     font-size: 22pt;
     font-weight: 600;
     padding-bottom: 30px;
 }
 
-.sub-reseach-detail-subtitle{
+.sub-section-detail-subtitle{
     padding-bottom: 60px;
+}
+
+.sub-section-grid-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.sub-section-grid-2{
+    display: grid;
+    grid-template: auto / auto auto ;
+    grid-row-gap: 50px;
+    grid-column-gap: 26px;
+}
+
+.sub-section-grid-3{
+    display: grid;
+    grid-template: auto / auto auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 26px;
+}
+
+.sub-section-grid-4{
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 26px;
+}
+
+
+.sub-section-grid-item>img {
+    width: 100%;
+    display: block;
 }

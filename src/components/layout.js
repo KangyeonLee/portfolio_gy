@@ -1,5 +1,5 @@
 import react from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom'
 
 import Header from './header/header'
 import Home from './contents/home'
@@ -16,6 +16,7 @@ export default function Layout(){
                 <Route path="/home" component={Home}/>
                 <Route path="/about" component={About}/>
                 <Route path="/project/:id" component={SubPage}/>
+                <Route exact path="/" component={Home}/>
                 <hr/>
                 <Footer></Footer>
             </div>
