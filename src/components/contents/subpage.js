@@ -2,7 +2,7 @@ import react, { useEffect, useState } from 'react'
 import '../../css/subpage.css'
 
 export default function SubPage(props){
-    const columnRole = Object.freeze({"oneColumn":1,"twoColumn":2,"grid":3})
+    const columnRole = Object.freeze({"oneColumn":1,"twoColumn":2,"grid":3,"center":4,"bisymetry":5})
     const dataRole = Object.freeze({"string":1,"image":2})
     const [data, setData] = useState([{
         title:`HEIDI<br/>MANUFACTURING<br/>SOLUTION SYSTEM`,
@@ -174,6 +174,14 @@ export default function SubPage(props){
                 contents:[
                     {
                         role:columnRole.twoColumn,
+                        left:"GOAL",
+                        right:`The following criteria were identified for the dashboard design.<br/><br/>
+                        <b>01. Optimize the UI to help users quickly find each process properly<br/><br/>
+                        02. Update the layout improves administrators add each working section conveniently<br/><br/>
+                        03. Update the UI and visual style to improve the readability and brand identity</b>`
+                    },
+                    {
+                        role:columnRole.twoColumn,
                         left:"STYLE GUIDE",
                         right:`Establishing color, font, and typographic scales on each different breakpoints. This guide is useful to act as a reference for a developer to transform the design into reality in code. below things I could do to design the dashboard.`
                     },
@@ -188,11 +196,121 @@ export default function SubPage(props){
                             {item:"/images/pr1/03 BUTTON_02.jpg", class:""},
                         ]
                     },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"DESIGN PROTOTYPE",
+                        contents:[
+                            {
+                                desc:``,
+                                data:[
+                                    {role:dataRole.image, item:`/images/pr1/proto_web01.png`}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.center,
+                        title:"Main Page Dashboard",
+                        contents:`Each menu configures to be visible at a glance on the main page. The menu designs to be easier to figure and recognize through icons.`
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"For admin",
+                        items:[
+                            {item:"/images/pr1/proto_web01.png", class:""},
+                            {item:"/images/pr1/proto_web02.png", class:""},
+                            {item:"/images/pr1/proto_web03.png", class:""},
+                            {item:"/images/pr1/proto_web04.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.center,
+                        title:"Dashboard Admin Page",
+                        contents:`Dashboard administrators can manage the entire menu which the user registration, customer operation centers, and view questions, answers, and schedule registration.`
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"For Supervisor",
+                        items:[
+                            {item:"/images/pr1/proto_web06.png", class:""},
+                            {item:"/images/pr1/proto_web07.png", class:""},
+                            {item:"/images/pr1/proto_web08.png", class:""},
+                            {item:"/images/pr1/proto_web09.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.center,
+                        title:"Manage Schedule for Supervisor",
+                        contents:`Can add the process manage schedule, can manage the work status of each employee. Also, can check each production line and faulty can be checked immediately.`
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"For Employees",
+                        items:[
+                            {item:"/images/pr1/proto_web10.png", class:""},
+                            {item:"/images/pr1/proto_web11.png", class:""},
+                            {item:"/images/pr1/proto_web12.png", class:""},
+                            {item:"/images/pr1/proto_web13.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.center,
+                        title:"Check the Own Process",
+                        contents:`Employees can check the production status of production lines immediately through the dashboard shown on the monitor.`
+                    },
+                    {
+                        role:columnRole.bisymetry,
+                        title:"Mobile",
+                        contents:[
+                            {
+                                left:"<video muted autoplay loop><source src='/images/pr1/proto_mobile01.mov'/></video>",
+                                right:`<b>Intro and Sign Up</b><br/><br/>During the sign-up process, the user will divide into supervisor and employee. Assign their own employee number to the user in this step.`
+                            },
+                            {
+                                left:`<b>Main Page and Navigation</b><br/><br/>Each employee can only check the work status of their production line. In the case of a supervisor, there is a menu where they can register the order status or work status, but ordinary factory employees can only check the work status.`,
+                                right:`<video muted autoplay loop><source src='/images/pr1/proto_mobile02.mov'/></video>`
+                            },
+                            {
+                                left:`<img src='/images/pr1/proto_mobile03.gif'/>`,
+                                right:`<b>Total Quality Management</b><br/><br/>Check and register the insufficient quantity of materials and production parts, the completion time of test report or production, and verification processing (menu available for supervisor).`
+                            },
+                            {
+                                left:`<b>Manage OrderList</b><br/><br/>Can order subsidiary materials requirements for the production line, and register and verify detailed information on the order and the product produced (etc. bag).`,
+                                right:`<img src='/images/pr1/proto_mobile04.gif'/>`
+                            },
+                            {
+                                left:`<img src='/images/pr1/proto_mobile05.gif'/>`,
+                                right:`<b>My Page and Check Incentive</b><br/><br/>Check the holidays, absence from work, sick leave, and performance-based payment the detail, and may check problems, penalty points, and alarms of the employee's part.`
+                            }
+                        ]
+                    },
                 ]
             },
             {
-                title:"RESEARCH",
-                contents:[{}]
+                title:"CONCLUSION & REFLECTION",
+                contents:[
+                    {
+                        role:columnRole.oneColumn,
+                        title:"",
+                        contents:[
+                            {
+                                desc:``,
+                                data:[
+                                    {role:dataRole.image, item:`/images/pr1/conclusion.png`}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.center,
+                        title:"Learning from the users",
+                        class:"conclusion-title",
+                        contents:`I’m proud of what I’ve achieved; I’ve designed this manufacturing solution system to improve the process and material management. As seen in the map above, each production line is extremely complicated. However, I’ve successfully designed the dashboard to match the user-friendly demands, despite the extreme complexity of the management process for the staff who need to quickly check production status and designed a readable and understandable design that can take as little time to figure out the menu as possible. The rate of production at the level increased 23 percent with the implementation of this new system.`
+                    },
+                ]
             },
         ]
 
@@ -210,6 +328,10 @@ export default function SubPage(props){
                 return oneLine(content)
             case columnRole.grid:
                 return pictureGridMap(content)
+            case columnRole.center:
+                return center(content)
+            case columnRole.bisymetry:
+                return bisymetry(content)
         }
     }
 
@@ -242,7 +364,7 @@ export default function SubPage(props){
                                         return ( // different render required for picture and string based.
                                             children.role == dataRole.string ? 
                                             oneLineString(children.image, children.item) :
-                                            oneLinePicture(children.item)
+                                            oneLinePicture(children.item, key)
                                         )
                                     })
                                 }
@@ -264,10 +386,10 @@ export default function SubPage(props){
         )
     }
 
-    const oneLinePicture = (item)=>{
+    const oneLinePicture = (item, key)=>{
         return ( // picture needs to be centerized
             <div>
-                <img src={item} style={{maxWidth:'800px', width:'100%', display:'block', margin:'0 auto', paddingBottom:'50px'}}/>
+                <img src={item} style={{maxWidth:'800px', width:'100%', display:'block', margin:'0 auto', paddingTop: key!=0 ?'50px' : ""}}/>
             </div>
         )
     }
@@ -285,6 +407,39 @@ export default function SubPage(props){
                             return(
                                 <div className="sub-section-grid-item" key={key}>
                                     <img src={v.item} className={v.class}/>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        )
+    }
+
+    const center = (item) =>{
+        return(
+            <div className="sub-section-center">
+                <div className={`sub-section-center-title ${item.class}`}>{item.title}</div>
+                <div className="sub-section-center-contents">{item.contents}</div>
+            </div>
+        )
+    }
+
+    const bisymetry = (item) =>{
+        return (
+            <div className="sub-section-bisymetry">
+                <div className={`sub-section-bisymetry-title`}>{item.title}</div>
+                <div className="sub-section-bisymetry-contents">
+                    {
+                        item.contents.map((content,key)=>{
+                            return(
+                                <div className="sub-section-bisymetry-content">
+                                    <div className={`sub-section-left ${key%2==1 ?"sub-section-vertical-center":""}`}>
+                                        <div dangerouslySetInnerHTML={{__html:content.left}} />
+                                    </div>
+                                    <div className={`sub-section-right ${key%2==0 ?"sub-section-vertical-center":""}`}>
+                                        <div dangerouslySetInnerHTML={{__html:content.right}} />
+                                    </div>
                                 </div>
                             )
                         })
@@ -338,7 +493,9 @@ export default function SubPage(props){
                                         }
                                     </div>
                                 </div>
-                                <hr/>
+                                {
+                                    data[props.match.params.id].sections.length -1 != key && <hr/>
+                                }
                             </div>
                         )
                     })

@@ -182,3 +182,50 @@
     width: 100%;
     display: block;
 }
+
+.sub-section-center{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sub-section-center-title{
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.sub-section-center-contents{
+    font-size: 14px;
+}
+.conclusion-title{
+    font-size: 24px !important;
+}
+
+.sub-section-bisymetry-contents{
+    display: grid;
+    flex-direction: row;
+    grid-row-gap: 145px;
+}
+
+.sub-section-bisymetry-content{
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    grid-column-gap: 20%;
+}
+
+.sub-section-bisymetry-title{
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.sub-section-bisymetry-content video, .sub-section-bisymetry-content img{
+    width: 100%;
+}
+
+.sub-section-vertical-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
