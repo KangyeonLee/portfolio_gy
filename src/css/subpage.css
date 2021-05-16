@@ -229,3 +229,23 @@
     align-items: center;
     font-size: 20px;
 }
+
+.sub-section-detail-images-container{
+    display: flex;
+    grid-template-columns: 30% 30% 30% ;
+}
+
+.sub-section-detail-images-item>img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.sub-section-detail-images-item>div{
+    margin: 0 auto;
+    width: 70%;
+    font-weight: 600;
+    color: #464E73;
+    text-align: center;
+}

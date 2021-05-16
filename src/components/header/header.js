@@ -23,7 +23,7 @@ export default function header(){
                             <NavLink to="/about" activeClassName="selected">ABOUT</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/resume" activeClassName="selected">RESUME</NavLink>
+                            <a href="/Resume_Gangyeon_Lee.pdf" target="_blank">RESUME</a>
                         </li>
                     </ul>
                 </div>
