@@ -34,7 +34,7 @@ export default function Home(){
         <div className="home-container">
             <div className="home-content">
                 <div className="home-greetings">
-                    <b>This is <div className="home-color">Gangyeon Lee</div>!</b>
+                    <b>This is <div className="home-color">Gangyeon Lee</div></b>
                     
                         
                     
@@ -42,7 +42,7 @@ export default function Home(){
                     I am a curious observer,<br/>
                     obsessed with creation,<br/>
                     teams' lubricant,<br/>
-                    and a <div className="home-color">UI/UX designer.</div>
+                    and a <div className="home-color">UX/UI designer.</div>
                 </div>
                 <div className="home-button-container">
                     <a href="mailto:kangyeon.lee.alicia@gmail.com">

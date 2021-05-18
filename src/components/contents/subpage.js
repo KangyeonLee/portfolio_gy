@@ -3,7 +3,7 @@ import '../../css/subpage.css'
 
 export default function SubPage(props){
     const columnRole = Object.freeze({"oneColumn":1,"twoColumn":2,"grid":3,"center":4,"bisymetry":5})
-    const dataRole = Object.freeze({"string":1,"image":2,"images":3})
+    const dataRole = Object.freeze({"string":1,"image":2,"images":3,"imageWithDesc":4})
     const [data, setData] = useState([
         {
         title:`HEIDI<br/>MANUFACTURING<br/>SOLUTION SYSTEM`,
@@ -41,6 +41,7 @@ export default function SubPage(props){
                     contents:[
                         {
                             desc:`<b>01. Interview and Profiles</b><br/><br/>I’ve set up an interview with three factory workers and I investigated how they can report their working process and receive work status.`,
+                            paddingBottom:"150px",
                             data:[
                                 {
                                     role:dataRole.string, 
@@ -203,37 +204,43 @@ export default function SubPage(props){
                         contents:[
                             {
                                 desc:``,
+                                class:"font-24 weight-600",
                                 data:[
-                                    {role:dataRole.image, item:`/images/pr1/proto_web01.png`}
+                                    {
+                                        role:dataRole.imageWithDesc, 
+                                        item:`/images/pr1/proto_web01.png`,
+                                        class:"padding-top-50",
+                                        title:"Main Page Dashboard",
+                                        desc:`Each menu configures to be visible at a glance on the main page. The menu designs to be easier to figure and recognize through icons.`
+
+                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Main Page Dashboard",
-                        contents:`Each menu configures to be visible at a glance on the main page. The menu designs to be easier to figure and recognize through icons.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"For admin",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Dashboard Admin Page",
+                        desc:`Dashboard administrators can manage the entire menu which the user registration, customer operation centers, and view questions, answers, and schedule registration.`,
                         items:[
-                            {item:"/images/pr1/proto_web01.png", class:""},
                             {item:"/images/pr1/proto_web02.png", class:""},
                             {item:"/images/pr1/proto_web03.png", class:""},
                             {item:"/images/pr1/proto_web04.png", class:""},
+                            {item:"/images/pr1/proto_web05.png", class:""},
                         ]
-                    },
-                    {
-                        role:columnRole.center,
-                        title:"Dashboard Admin Page",
-                        contents:`Dashboard administrators can manage the entire menu which the user registration, customer operation centers, and view questions, answers, and schedule registration.`
                     },
                     {
                         role:columnRole.grid,
                         column:2,
                         title:"For Supervisor",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Manage Schedule for Supervisor",
+                        desc:`Can add the process manage schedule, can manage the work status of each employee. Also, can check each production line and faulty can be checked immediately.`,
                         items:[
                             {item:"/images/pr1/proto_web06.png", class:""},
                             {item:"/images/pr1/proto_web07.png", class:""},
@@ -242,25 +249,19 @@ export default function SubPage(props){
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Manage Schedule for Supervisor",
-                        contents:`Can add the process manage schedule, can manage the work status of each employee. Also, can check each production line and faulty can be checked immediately.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"For Employees",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Check the Own Process",
+                        desc:`Employees can check the production status of production lines immediately through the dashboard shown on the monitor.`,
                         items:[
                             {item:"/images/pr1/proto_web10.png", class:""},
                             {item:"/images/pr1/proto_web11.png", class:""},
                             {item:"/images/pr1/proto_web12.png", class:""},
                             {item:"/images/pr1/proto_web13.png", class:""},
                         ]
-                    },
-                    {
-                        role:columnRole.center,
-                        title:"Check the Own Process",
-                        contents:`Employees can check the production status of production lines immediately through the dashboard shown on the monitor.`
                     },
                     {
                         role:columnRole.bisymetry,
@@ -800,7 +801,8 @@ export default function SubPage(props){
                                 desc:``,
                                 data:[
                                     {
-                                        role:dataRole.images, 
+                                        role:dataRole.images,
+                                        class:"color-dark-blue", 
                                         items:[
                                             {
                                                 src:"/images/pr4/icon01.png",
@@ -964,7 +966,7 @@ export default function SubPage(props){
                     {
                         role:columnRole.grid,
                         column:2,
-                        title:"Desktop",
+                        title:"",
                         items:[
                             {item:"/images/pr4/01 COLOR.jpg", class:""},
                             {item:"/images/pr4/02 FONT.jpg", class:""},
@@ -972,6 +974,175 @@ export default function SubPage(props){
                             {item:"/images/pr4/03 BUTTON_web.jpg", class:""},
                             {item:"/images/pr4/05 TAB .jpg", class:""},
                             {item:"/images/pr4/05 TAB_web.jpg", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"HIGH FIDELITY MOCKUP",
+                        contents:[
+                            {
+                                desc:``,
+                                data:[
+                                    {role:dataRole.image, item:`/images/pr4/high-fi.jpg`},
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"DESIGN PROTOTYPE",
+                        contents:[
+                            {
+                                desc:`Desktop`,
+                                class:"font-24 weight-600",
+                                data:[
+                                    {
+                                        role:dataRole.imageWithDesc, 
+                                        item:`/images/pr4/web01.png`,
+                                        class:"padding-top-50",
+                                        title:"Main Page and Popularity",
+                                        desc:`Overall novel thumbnails which grab user’s Interests or preference.  As well, List popular novels in each section placed on the main page so the user can find them right away at once.`
+
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Explore Novels of Each Genre",
+                        desc:`Daily novels or published books can select by genre and listed as thumbnail types or lists of each book, depending on the user's preference.`, 
+                        
+                        items:[
+                            {item:"/images/pr4/web02.png", class:""},
+                            {item:"/images/pr4/web03.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Create and Challenge",
+                        desc:`Regular users are also given the opportunity to serialize their novel freely, and these works are exposed to the list in the order of popularity. If the novels become more popular, it will also give users a chance to publish their web novels.`, 
+                        
+                        items:[
+                            {item:"/images/pr4/web04.png", class:""},
+                            {item:"/images/pr4/web05.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Recommend Keyword and Eye-catching Index of a Novel",
+                        desc:`Popular keywords are exposed mainly to the genres that users enjoy watching the most, and a list of web novels by keyword creates. Users can read the recommended lists firstly according to their preference.`, 
+                        
+                        items:[
+                            {item:"/images/pr4/web06.png", class:""},
+                            {item:"/images/pr4/web07.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"User-friendly Viewer and My Page",
+                        desc:`The viewer can set up in various ways, such as font and background colour, according to users' tastes, and the design also designs with images that can remind them of books. Mypage provides the ability to check and manage purchased novels and comments and to post personal web novels.`, 
+                        
+                        items:[
+                            {item:"/images/pr4/web08.png", class:""},
+                            {item:"/images/pr4/web09.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.bisymetry,
+                        title:"Mobile",
+                        desc:`Desktop`,
+                        class:"font-24 weight-600",
+                        contents:[
+                            {
+                                left:"<img src='/images/pr4/webnovel_proto01.gif'/>",
+                                right:`<b>Intro and Sign Up</b><br/><br/>
+                                During the sign-up process, the user should set up the keyword what will appear genre follow the user’s setting on the main page.`
+                            },
+                            {
+                                left:`<b>Simplify Main Page</b><br/><br/>
+                                Overall novel thumbnails which grab user’s Interests or preference.  As well, List popular novels in each section placed on the main page so the user can find them right away at once.`,
+                                right:`<img src='/images/pr4/webnovel_proto02.gif'/>`
+                            },
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Explore Novels of Each Genre",
+                        desc:`Daily novels or published books can select by genre and listed as thumbnail types or lists of each book, depending on the user's preference.`, 
+                        
+                        items:[
+                            {item:"/images/pr4/webnovel_proto03.gif", class:""},
+                            {item:"/images/pr4/webnovel_proto04.gif", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Popularity Novels and Recommend Genre",
+                        desc:`Popular keywords are exposed mainly to the genres that users enjoy watching the most, and a list of web novels by keyword creates. Users can read the recommended lists first according to their preference.`, 
+                        
+                        items:[
+                            {item:"/images/pr4/webnovel_proto05.gif", class:""},
+                            {item:"/images/pr4/webnovel_proto06.jpg", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.bisymetry,
+                        title:"",
+                        contents:[
+                            {
+                                left:"<img src='/images/pr4/webnovel_proto07.gif'/>",
+                                right:`<b>Eye-catching Index of a Novel</b><br/><br/>
+                                In Novel Content, users can set up, purchase, and receive alarms whenever a session is uploaded. Users can donate to the author, purchase, manage, and comments on the episode. The list includes interesting thumbnail images of every episode for the user's enjoyment.`
+                            },
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"User-friendly Viewer",
+                        desc:`The viewer can set up in various ways, such as font and background colour, according to users' tastes, and the design also designs with images that can remind them of books. `,                   
+                        items:[
+                            {item:"/images/pr4/webnovel_proto08.png", class:""},
+                            {item:"/images/pr4/webnovel_proto09.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.bisymetry,
+                        title:"",
+                        class:"",
+                        contents:[
+                            {
+                                left:`<b>My Page </b><br/><br/>Mypage provides the ability to check and manage purchased novels and comments and to post personal web novels.`,
+                                right:`<img src='/images/pr4/webnovel_proto10.gif'/>`
+                            },
                         ]
                     },
                 ]
@@ -989,11 +1160,380 @@ export default function SubPage(props){
             }
 
         ]
-    }   
+    },
+    {
+        title:`DEA-GU ENGLISH <br/>VILLAGE`,
+        titleDescription:`This web app is <b>managed students' schedule</b> of English village through the web, mobile site`,
+        titleImage:"/images/pr5/dgev_hero.jpg",
+        properties:[
+            {type:"PROJECT TYPE",data:["Desktop/Mobile"]},
+            {type:"ROLE",data:["Project designer"]},
+            {type:"KEY SKILLS",data:["Concept Ideation","Visual Design","UI/UX design","Project Management"]},
+            {type:"TIMELINE",data:["Dec 2015 - Feb 2016"]},
+        ],
+        sections:[{                    
+                title:"RESEARCH",
+                contents:[
+                    {
+                        role:columnRole.twoColumn,
+                        left:"PROJECT OVERVIEW",
+                        right:`This web application provides features that sign up for the class to users. They can join the class through this site, as well as the users can manage the course schedule, purchase the class books, and apply for class special camp.`
+                    },
+                    {
+                        role:columnRole.twoColumn,
+                        left:"THE PROBLEM",
+                        right:`<b>Require new site system</b><br/><br/>
+                        Since there was only a course introduction on the previous site, I had to call the company and make a reservation to register for the class. `
+                    },   
+                    {
+                        role:columnRole.oneColumn,
+                        title:"FLOW ANALYSIS",
+                        contents:[
+                            {
+                                desc:`<b>01. Interview and Profiles</b><br/><br/>
+                                I conducted interviews with two people who are using this site for the class constantly. I asked them questions to identify their uncomfortable points.`,
+                                paddingBottom:"150px",
+                                data:[
+                                    {
+                                        role:dataRole.string, 
+                                        image:"/images/pr5/face1.png",
+                                        item:`<b>Parents:</b> I wanted to apply for an English class for my son, but it was inconvenient that I could not see the detailed course description, and it was uncomfortable that I always had to use the phone when I registered.`
+                                    },
+                                    {
+                                        role:dataRole.string, 
+                                        image:"/images/pr5/face2.png",
+                                        item:`<b>Student:</b> The place where I take the class is very far away, so I would like to take the lecture online.`
+                                    },
+                                ]
+                            },
+                            {
+                                desc:`<b>02. Analysis of Demand from User</b><br/><br/>
+                                I obtained some key problems from above interviews.`,
+                                paddingBottom:"0px",
+                                data:[]
+                            },
+                            {
+                                desc:``,
+                                paddingBottom:"0px",
+                                data:[
+                                    {
+                                        role:dataRole.images, 
+                                        class:"color-bright-green",
+                                        items:[
+                                            {
+                                                src:"/images/pr5/dgev_icon01.jpg",
+                                                desc:"Sign-up for classes by setting the schedule"
+                                            },
+                                            {
+                                                src:"/images/pr5/dgev_icon02.jpg",
+                                                desc:"Reqire to take remote classes online"
+                                            },
+                                            {
+                                                src:"/images/pr5/dgev_icon03.jpg",
+                                                desc:"More detail of courses"
+                                            }
+                                        ]
+                                    },
+                                ]
+                            },
+                            
+                        ]
+                    },
+                    {
+                        role:columnRole.twoColumn,
+                        left:"THE SOLUTION",
+                        right:`<b>Designing a Convenient register system</b><br/><br/>
+                        I decided to design a new site that requires a system site where users can sign-up courses, purchase class books, take a class online and manage schedules not only with mobile devices but also with a desktop or laptop.`
+                    },   
+                ]
+            },
+            {                    
+                title:"DESIGN DEVELOPMENT",
+                contents:[
+                    {
+                        role:columnRole.twoColumn,
+                        left:"SITEMAP PROPOSAL",
+                        right:`Mapping out primary and secondary pages to design that the main page is a summary listing of favourite novels of each genre, manage e-book storage of user, and viewer page.`
+                    },
+                ]
+            },
+            {                    
+                title:"RESEARCH",
+                contents:[
+                    {
+                        role:columnRole.twoColumn,
+                        left:"PROJECT OVERVIEW",
+                        right:`This web application provides features that sign up for the class to users. They can join the class through this site, as well as the users can manage the course schedule, purchase the class books, and apply for class special camp.`
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"",
+                        contents:[
+                            {
+                                desc:`<b>01. Primary page - Main page </b><br/><br/>
+                                A brief introduction to the English village, the features of the site, the features of the English village, and the events held in the English village can be found.<br/><br/>
+                                <b>02. Secondary pages - Course Programs, About, Community, Support</b><br/><br/>
+                                An accurate description of the courses, detailed description of the english camp, and supporting page.<br/><br/>
+                                <b>03. Tertiary — My page, Manage my classes</b><br/><br/>
+                                Manage schedule, pre-test, video system, purchase system.`,
+                                data:[
+                                    
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"",
+                        contents:[
+                            {
+                                desc:``,
+                                data:[
+                                    {role:dataRole.image, item:`/images/pr5/sitemap.png`}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.twoColumn,
+                        left:"USER JOURNEY MAP",
+                        right:`The information hierarchy to six main parts: Home(list), My page, about DGEV, introduction of classes, support, and purchase page.`
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"",
+                        contents:[
+                            {
+                                desc:``,
+                                data:[
+                                    {role:dataRole.image, item:`/images/pr5/journey map.png`}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.twoColumn,
+                        left:"LOW FIDELITY<br/> WIREFRAME",
+                        right:`I designed two types which are web application for the site users.`
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:3,
+                        title:"",
+                        items:[
+                            {item:"/images/pr5/dgev_lowfi_01.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_02.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_03.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_04.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_05.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_06.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_07.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_08.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_09.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_10.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_11.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_12.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_13.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_14.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_15.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_16.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_17.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_18.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_19.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_20.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_21.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_22.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_23.png", class:""},
+                            {item:"/images/pr5/dgev_lowfi_24.png", class:""},
+                        ]
+                    },
+                ]
+            },
+            {                    
+                title:"FINAL DESIGN",
+                contents:[
+                    {
+                        role:columnRole.twoColumn,
+                        left:"GOAL",
+                        right:`The following criteria were identified for design the web-novel viewer.<br/><br/>
+                        <b>1. Optimize the UI to help users quickly find each devices' advertisements of clients<br/><br/>
+                        2. Update the layout improves administrators add each advertisement conveniently<br/><br/>
+                        3. Update the UI and visual style to improve the readability and brand identity</b>`
+                    },
+                    {
+                        role:columnRole.twoColumn,
+                        left:"STYLE GUIDE",
+                        right:`Establishing color, font, and typographic scales on each different breakpoints. This guide is useful to act as a reference for a developer to transform the design into reality in code. below things I could do to design the dashboard.`
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        items:[
+                            {item:"/images/pr5/dgev_style Guide01.jpg", class:""},
+                            {item:"/images/pr5/dgev_style Guide02.jpg", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"HIGH FIDELITY MOCKUP",
+                        contents:[
+                            {
+                                desc:``,
+                                data:[
+                                    {role:dataRole.image, item:`/images/pr5/hifi.jpg`}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.oneColumn,
+                        title:"DESIGN PROTOTYPE",
+                        contents:[
+                            {
+                                desc:`Desktop`,
+                                class:"font-24 weight-600",
+                                data:[
+                                    {
+                                        role:dataRole.imageWithDesc, 
+                                        item:`/images/pr5/proto01.png`,
+                                        class:"padding-top-50",
+                                        title:"Main Page",
+                                        desc:`Most of the site's users are students and parents, a design concept was a school and books. Through the web site, a brief introduction to the English village, the features of the English village, and the events held in the English village.`
+
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"About Deagu-Gyungbuk English Village",
+                        desc:`There are the founding ideology of Daegu, Gyeongbuk English Village, greetings from the president of the academy, and detailed information pages of the academy facilities.`,
+                        items:[
+                            {item:"/images/pr5/proto02.png", class:""},
+                            {item:"/images/pr5/proto03.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Class Program Introduction",
+                        desc:`Detailed curriculum explanation of the course programs conducted in Daegu-Gyeongbuk English Village and a feature to register for classes provide.`,
+                        items:[
+                            {item:"/images/pr5/proto04.png", class:""},
+                            {item:"/images/pr5/proto05.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Manage the Class",
+                        desc:`If the user applies for an online video class, they can manage the payment details and schedule on MyPage. In addition, the results and wrong answers of the tests seen in the class also provide so that users can check again to study which questions they got wrong.`,
+                        items:[
+                            {item:"/images/pr5/proto06.png", class:""},
+                            {item:"/images/pr5/proto07.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Support and Purchase",
+                        desc:`There are announcements and Q&A pages, and the user can post questions about online or offline classes directly. In addition, a shopping page provides where the user can choose a book by paying tuition fees for textbooks or course programs.`,
+                        items:[
+                            {item:"/images/pr5/proto08.png", class:""},
+                            {item:"/images/pr5/proto09.png", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.bisymetry,
+                        title:"Mobile Web App",
+                        contents:[
+                            {
+                                left:"<img src='/images/pr5/proto_mobile00.gif'/>",
+                                right:`<b>Main Page</b><br/><br/>
+                                Made to feel similar to a mobile app and selected the menus that users need most and briefly organized the menus to represent them in an icon format. Users can view the notice right away.`
+                            },
+                            {
+                                left:`<b>About Deagu-Gyungbuk English Village</b><br/><br/>
+                                There are the founding ideology of Daegu, Gyeongbuk English Village, greetings from the president of the academy, and detailed information pages of the academy facilities.`,
+                                right:`<img src='/images/pr5/proto_mobile01.gif'/>`
+                            },
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Class Program Introduction",
+                        desc:`Detailed curriculum explanation of the course programs conducted in Daegu-Gyeongbuk English Village and a feature to register for classes provide.`,
+                        items:[
+                            {item:"/images/pr5/proto_mobile02.gif", class:""},
+                            {item:"/images/pr5/proto_mobile03.gif", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Manage the Class",
+                        desc:`If the user applies for an online video class, they can manage the payment details and schedule on MyPage. In addition, the results and wrong answers of the tests seen in the class also provide so that users can check again to study which questions they got wrong.`,
+                        items:[
+                            {item:"/images/pr5/proto_mobile04.gif", class:""},
+                            {item:"/images/pr5/proto_mobile05.gif", class:""},
+                            {item:"/images/pr5/proto_mobile06.gif", class:""},
+                            {item:"/images/pr5/proto_mobile07.gif", class:""},
+                        ]
+                    },
+                    {
+                        role:columnRole.grid,
+                        column:2,
+                        title:"",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Support and Purchase",
+                        desc:`There are announcements and Q&A pages, and the user can post questions about online or offline classes directly. In addition, a shopping page provides where the user can choose a book by paying tuition fees for textbooks or course programs.`,
+                        items:[
+                            {item:"/images/pr5/proto_mobile08.gif", class:""},
+                            {item:"/images/pr5/proto_mobile09.gif", class:""},
+                        ]
+                    },
+                ]
+            },
+            {                    
+                title:"CONCLUSION & REFLECTION",
+                contents:[
+                    {
+                        role:columnRole.center,
+                        title:"",
+                        class:"conclusion-title",
+                        contents:`In this project, I researched the feedback from each type of user. Also, I was in the position of the one student. I tried to design this project the user can feel more interest when the students using this site. As a result, many of parents and students has increased as the overall explanation of the site has become easier than before, and many schools have also requested support. As well, added visual element that may not lose its identity. Users will be able to feel interest while checking the course programs at this site.`
+                    },
+                ]
+            }
+        ]
+    }
 ])
 
     useEffect(()=>{
-        window.scrollTo(0,0)
+        //window.scrollTo(0,0)
     })
 
     const renderDependsOnRole = (content) =>{
@@ -1016,7 +1556,8 @@ export default function SubPage(props){
             case dataRole.string:
                 return oneLineString(content.image, content.item)
             case dataRole.image:
-                return oneLinePicture(content.item, key)
+            case dataRole.imageWithDesc:
+                return oneLinePicture(content, key)
             case dataRole.images:
                 return oneLinePicturesWithDesc(content)
         }
@@ -1042,9 +1583,9 @@ export default function SubPage(props){
                 {
                     item.contents.map((v,k)=>{
                         return (
-                            <div style={{paddingBottom: item.contents.length -1 == k ? '0px' : '150px'}} > {/* last item shouldn't have a margin */}
+                            <div style={{paddingBottom: v.paddingBottom}} > {/* last item shouldn't have a margin */}
                                 {
-                                    v.desc != "" && <div className="sub-section-detail-subtitle" dangerouslySetInnerHTML={{__html:v.desc}}></div>
+                                    v.desc != "" && <div className={`sub-section-detail-subtitle ${v.class}`} dangerouslySetInnerHTML={{__html:v.desc}}></div>
                                 }
                                 {   // iterate data in contents...
                                     v.data.map((children, key)=>{
@@ -1071,10 +1612,17 @@ export default function SubPage(props){
         )
     }
 
-    const oneLinePicture = (item, key)=>{
+    const oneLinePicture = (content, key)=>{
         return ( // picture needs to be centerized
             <div>
-                <img src={item} style={{maxWidth:'800px', width:'100%', display:'block', margin:'0 auto', paddingTop: key!=0 ?'50px' : ""}}/>
+                <img src={content.item} style={{maxWidth:'1000px', width:'100%', display:'block', margin:'0 auto', paddingTop: key!=0 ?'50px' : ""}}/>
+                {
+                    content.dataRole == content.role.imageWithDesc && 
+                    <div className="sub-section-center">
+                        <div className={`sub-section-center-title ${content.class}`}>{content.title}</div>
+                        <div className="sub-section-center-contents">{content.desc}</div>
+                    </div>
+                }
             </div>
         )
     }
@@ -1085,7 +1633,7 @@ export default function SubPage(props){
                 {
                     content.items.map((item,key)=>{
                         return (
-                            <div className="sub-section-detail-images-item" key={key}>
+                            <div className={`sub-section-detail-images-item ${content.class}`} key={key}>
                                 <img src={item.src}/>
                                 <div dangerouslySetInnerHTML={{__html:item.desc}}/>
                             </div>
@@ -1102,7 +1650,7 @@ export default function SubPage(props){
                 {
                     item.title != "" &&<p className="sub-section-grid-title">{item.title}</p>
                 }
-                <div className={`sub-section-grid-${item.column} left-padding-100`}>
+                <div className={`sub-section-grid-${item.column} `}>
                     
                     {
                         item.items.map((v,key)=>{
@@ -1114,6 +1662,13 @@ export default function SubPage(props){
                         })
                     }
                 </div>
+                {
+                    item.gridDesc && 
+                    <div className="sub-section-center">
+                        <div className={`sub-section-center-title ${item.class}`}>{item.descLegend}</div>
+                        <div className="sub-section-center-contents">{item.desc}</div>
+                    </div>
+                }
             </div>
         )
     }
@@ -1130,16 +1685,16 @@ export default function SubPage(props){
     const bisymetry = (item) =>{
         return (
             <div className="sub-section-bisymetry">
-                <div className={`sub-section-bisymetry-title`}>{item.title}</div>
+                <div className={`sub-section-bisymetry-title ${item.class}`}>{item.title}</div>
                 <div className="sub-section-bisymetry-contents">
                     {
                         item.contents.map((content,key)=>{
                             return(
                                 <div className="sub-section-bisymetry-content">
-                                    <div className={`sub-section-left ${key%2==1 ?"sub-section-vertical-center":""}`}>
+                                    <div className={`sub-section-left sub-section-vertical-center`}>
                                         <div dangerouslySetInnerHTML={{__html:content.left}} />
                                     </div>
-                                    <div className={`sub-section-right ${key%2==0 ?"sub-section-vertical-center":""}`}>
+                                    <div className={`sub-section-right sub-section-vertical-center`}>
                                         <div dangerouslySetInnerHTML={{__html:content.right}} />
                                     </div>
                                 </div>

@@ -246,6 +246,27 @@
     margin: 0 auto;
     width: 70%;
     font-weight: 600;
-    color: #464E73;
     text-align: center;
+}
+
+.padding-top-50{
+    padding-top: 50px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+.weight-600{
+    font-weight: 600;
+}
+
+.color-dark-blue>div
+{
+    color: #464E73;
+}
+
+.color-bright-green>div
+{
+    color: #0FAE91;
 }
