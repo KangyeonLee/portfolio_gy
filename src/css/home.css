@@ -45,6 +45,15 @@
     cursor: pointer;
 }
 
+.home-button:hover{
+    color: white;
+    background-color: #7368FF;
+}
+
+.home-button>p{
+    font-weight: 500;
+}
+
 .home-contents-container a{
     text-decoration: none;
 }
