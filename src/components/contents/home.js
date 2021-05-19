@@ -6,26 +6,36 @@ export default function Home(){
     const [content, setContent] = useState([
         {id:0, title:"HEIDI MANUFACTURING SOLUTION SYSTEM", 
         img:"/images/01 heidi_thumb.jpg",
-        type:"Web Application / App",
+        hoverImg:"/images/heidi_thumb_hover.jpg",
+        hoverText:"HEIDI MANUFACTURING SOLUTION SYSTEM",
+        type:"Desktop / Mobile",
         description:"This web app is a dashboard that helps employees to operate process management systems more efficiently"},
         {id:1, title:"HEIDI OFFICIAL WEBSITE",
         img:"/images/02 heidi__website_thumb.jpg",
-        type:"Web / Mobile web Application",
+        hoverImg:"/images/heidi_web_thumb_hover.jpg",
+        hoverText:"HEIDI SOLUTION SYSTEM PROMOTE WEBSITE",
+        type:"Desktop / Mobile",
         description:"A web app design intended for the company HEIDI introduction"
         },
         {id:2, title:"adKnowva AD MANAGE SYSTEM",
         img:"/images/03 adknowva_dashboard_thumb.jpg",
-        type:"Web Application",
+        hoverImg:"/images/adknowva_thumb_hover.jpg",
+        hoverText:"ADKNOWVA ADVERTISEMENT MANAGE DASHBOARD",
+        type:"Desktop",
         description:"Web application design for advertisement management of the web, mobile and apps"
         },
         {id:3, title:"WEB-NOVEL VIEWER",
         img:"/images/05 webnovel_thumb.jpg",
-        type:"Web Application",
+        hoverImg:"/images/webnovel_thumb_hover.jpg",
+        hoverText:"ONLINE WEB-NOVEL VIEWER",
+        type:"Desktop / Mobile",
         description:"A web-novel reader app designed for both desktop and mobile."
         },
         {id:4, title:"DEA-GU ENGLISH VILLAGE",
         img:"/images/02 heidi__website_thumb.jpg",
-        type:"Web / Mobile web Application",
+        hoverImg:"/images/dgev_thumb_hover.jpg",
+        hoverText:"DEA-GU KYEONGBUK ENGLISH VE VILLAGE WEBSITE",
+        type:"Desktop / Mobile",
         description:"Web app design that is intended to introduce the company of HUVLE"
         }
     ]);
@@ -56,49 +66,63 @@ export default function Home(){
                         content.map((v,k)=>{
                             if(k%2 == 0){
                                 return(
-                                    <Link to={`/project/${v.id}`}>
-                                        <div className="content" key={k}>
-                                            <div className="content-picture" >
-                                                <img src={process.env.PUBLIC_URL+v.img}></img>
-                                            </div>
-                                            <div className="content-detail-container" >
-                                                <div className="content-detail" >
-                                                    <div className="content-title">
-                                                        <b>{v.title}</b>
+                                    
+                                        <div className="content-container">
+                                            <Link to={`/project/${v.id}`}>
+                                            <div className="content" key={k}>
+                                                <div className="content-picture" >
+                                                    <img src={process.env.PUBLIC_URL+v.img}></img>
+                                                </div>
+                                                <div className="content-detail-container" >
+                                                    <div className="content-detail" >
+                                                        <div className="content-title">
+                                                            <b>{v.title}</b>
+                                                        </div>
+                                                        <div className="content-type">
+                                                            {v.type}
+                                                        </div>
+                                                        <div className="content-description">
+                                                            {v.description}
+                                                        </div>      
                                                     </div>
-                                                    <div className="content-type">
-                                                        {v.type}
-                                                    </div>
-                                                    <div className="content-description">
-                                                        {v.description}
-                                                    </div>      
                                                 </div>
                                             </div>
+                                            <div className="content-hover-container">
+                                                <img src={v.hoverImg}/>
+                                                <p>{v.hoverText}</p>
+                                            </div>
+                                            </Link>
                                         </div>
-                                    </Link>
                                 )
                             }else{
                                 return(
-                                    <Link to={`/project/${v.id}`}>
-                                        <div className="content" key={k}>
-                                            <div className="content-detail-container" >
-                                                <div className="content-detail" >
-                                                    <div className="content-title">
-                                                        <b>{v.title}</b>
+                                    
+                                        <div className="content-container">
+                                            <Link to={`/project/${v.id}`}>
+                                            <div className="content" key={k}>
+                                                <div className="content-detail-container" >
+                                                    <div className="content-detail" >
+                                                        <div className="content-title">
+                                                            <b>{v.title}</b>
+                                                        </div>
+                                                        <div className="content-type">
+                                                            {v.type}
+                                                        </div>
+                                                        <div className="content-description">
+                                                            {v.description}
+                                                        </div>      
                                                     </div>
-                                                    <div className="content-type">
-                                                        {v.type}
-                                                    </div>
-                                                    <div className="content-description">
-                                                        {v.description}
-                                                    </div>      
+                                                </div>
+                                                <div className="content-picture" >
+                                                    <img src={process.env.PUBLIC_URL+v.img}></img>
                                                 </div>
                                             </div>
-                                            <div className="content-picture" >
-                                                <img src={process.env.PUBLIC_URL+v.img}></img>
+                                            <div className="content-hover-container">
+                                                <img src={v.hoverImg}/>
+                                                <p>{v.hoverText}</p>
                                             </div>
+                                            </Link>
                                         </div>
-                                    </Link>
                                 )
                             }
                         })

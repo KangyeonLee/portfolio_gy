@@ -52,7 +52,7 @@
 .content{
     display: flex;
     flex-direction: row;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .content-picture{
@@ -93,6 +93,39 @@
 .content-description{
     font-size: 13px;
     color: #616369;
+}
+
+.content-hover-container{
+    position: absolute;
+    transform: translate(0px, -500px);
+}
+
+.content-hover-container>p{
+    position: absolute;
+    transform: translate(0px, -230px);
+    opacity: 0;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+}
+
+.content-hover-container>img{
+    width: 910px;
+    opacity: 0;
+    z-index: 99;
+    transition: 0.2s;
+}
+
+.content-container:hover .content-hover-container>img {
+    opacity: 1;
+    filter: brightness(40%); 
+}
+
+.content-container:hover .content-hover-container>p {
+    opacity: 1;
 }
 
 

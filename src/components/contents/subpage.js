@@ -203,7 +203,7 @@ export default function SubPage(props){
                         title:"DESIGN PROTOTYPE",
                         contents:[
                             {
-                                desc:``,
+                                desc:`Desktop`,
                                 class:"font-24 weight-600",
                                 data:[
                                     {
@@ -222,7 +222,8 @@ export default function SubPage(props){
                         role:columnRole.grid,
                         column:2,
                         title:"For admin",
-                        class:"padding-top-50",
+                        class:"padding-top-50 ",
+                        gridClass:"scale-up",
                         gridDesc:true,
                         descLegend:"Dashboard Admin Page",
                         desc:`Dashboard administrators can manage the entire menu which the user registration, customer operation centers, and view questions, answers, and schedule registration.`,
@@ -238,6 +239,7 @@ export default function SubPage(props){
                         column:2,
                         title:"For Supervisor",
                         class:"padding-top-50",
+                        gridClass:"scale-up",
                         gridDesc:true,
                         descLegend:"Manage Schedule for Supervisor",
                         desc:`Can add the process manage schedule, can manage the work status of each employee. Also, can check each production line and faulty can be checked immediately.`,
@@ -253,6 +255,7 @@ export default function SubPage(props){
                         column:2,
                         title:"For Employees",
                         class:"padding-top-50",
+                        gridClass:"scale-up",
                         gridDesc:true,
                         descLegend:"Check the Own Process",
                         desc:`Employees can check the production status of production lines immediately through the dashboard shown on the monitor.`,
@@ -293,24 +296,27 @@ export default function SubPage(props){
             },
             {
                 title:"CONCLUSION & REFLECTION",
+                class:"conclusion-container",
                 contents:[
                     {
                         role:columnRole.oneColumn,
-                        title:"",
+                        title:"DESIGN PROTOTYPE",
                         contents:[
                             {
-                                desc:``,
+                                desc:`Desktop`,
+                                class:"font-24 weight-600",
                                 data:[
-                                    {role:dataRole.image, item:`/images/pr1/conclusion.png`}
+                                    {
+                                        role:dataRole.imageWithDesc, 
+                                        item:`/images/pr1/conclusion.png`,
+                                        class:"padding-top-50",
+                                        title:"Learning from the users",
+                                        desc:`I’m proud of what I’ve achieved; I’ve designed this manufacturing solution system to improve the process and material management. As seen in the map above, each production line is extremely complicated. However, I’ve successfully designed the dashboard to match the user-friendly demands, despite the extreme complexity of the management process for the staff who need to quickly check production status and designed a readable and understandable design that can take as little time to figure out the menu as possible. The rate of production at the level increased 23 percent with the implementation of this new system.`
+
+                                    }
                                 ]
                             }
                         ]
-                    },
-                    {
-                        role:columnRole.center,
-                        title:"Learning from the users",
-                        class:"conclusion-title",
-                        contents:`I’m proud of what I’ve achieved; I’ve designed this manufacturing solution system to improve the process and material management. As seen in the map above, each production line is extremely complicated. However, I’ve successfully designed the dashboard to match the user-friendly demands, despite the extreme complexity of the management process for the staff who need to quickly check production status and designed a readable and understandable design that can take as little time to figure out the menu as possible. The rate of production at the level increased 23 percent with the implementation of this new system.`
                     },
                 ]
             },
@@ -333,6 +339,7 @@ export default function SubPage(props){
         ],
         sections:[{
             title:"INTRODUCTION",
+            titleClass:"color-brighter-green",
             contents:[
                 {
                     role:columnRole.twoColumn,
@@ -355,6 +362,7 @@ export default function SubPage(props){
             },
             {
                 title:"DESIGN DEVELOPMENT",
+                titleClass:"color-brighter-green",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -409,6 +417,8 @@ export default function SubPage(props){
             },
             {
                 title:"FINAL DESIGN",
+                titleClass:"color-brighter-green",
+                class:"conclusion-container",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -466,26 +476,31 @@ export default function SubPage(props){
                         title:"",
                         contents:[
                             {
+                                class:"bisymetry-sm-lg",
                                 left:"<img src='/images/pr2/prototype01.gif'/>",
                                 right:`<b>Simplify Main Page</b><br/><br/>
                                 A brief introduction to the HEIDI project and an overall functional description of the process management system.`
                             },
                             {
+                                class:"bisymetry-sm-lg",
                                 left:`<b>Explain Business</b><br/><br/>
                                 Help users be aware of the reason why HEIDI's business is needed and the convenience and benefits of the production system it will bring.`,
                                 right:`<img src='/images/pr2/prototype02.gif'/>`
                             },
                             {
+                                class:"bisymetry-sm-lg",
                                 left:"<img src='/images/pr2/prototype03.gif'/>",
                                 right:`<b>Description Management System</b><br/><br/>
                                 Explains the detailed feature of the process management system and the role of each menu to the user. It refers to dashboard images and descript the feature convenient to users using visual assist.`
                             },
                             {
+                                class:"bisymetry-sm-lg",
                                 left:`<b>About HEIDI</b><br/><br/>
                                 It is a page that shows users about HEIDI's corporate ideology and company.`,
                                 right:`<img src='/images/pr2/prototype04.gif'/>`
                             },
                             {
+                                class:"bisymetry-sm-lg",
                                 left:"<img src='/images/pr2/prototype05.gif'/>",
                                 right:`<b>Support Pages</b><br/><br/>
                                 It is a page that runs a customer center and questions about business features.`
@@ -514,6 +529,7 @@ export default function SubPage(props){
         ],
         sections:[{
             title:"RESEARCH",
+            titleClass:"color-brighter-green",
             contents:[
                 {
                     role:columnRole.twoColumn,
@@ -543,7 +559,7 @@ export default function SubPage(props){
                                 {
                                     role:dataRole.string, 
                                     image:"/images/pr1/face3.png",
-                                    item:`<b>Client’s worker:</b> He manages advertisements for mobile devices and advertisements on websites. However, after registering advertisements, it is too difficult to recognize which device the ad is on for each size. Also, It is too complicated to check out the profits from online advertising.`
+                                    item:`<b>Client’s worker:</b> He manages advertisements for mobile devices and advertisements on websites. However, after registering advertisements, it is too difficult to recognize which device the ad is on for each size. Also, It is too complicated to check out the profits from online advertising.<br/><br/><br/>`
                                 },
                             ]
                         },
@@ -580,6 +596,7 @@ export default function SubPage(props){
             ]},
             {
                 title:"DESIGN DEVELOPMENT",
+                titleClass:"color-brighter-green",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -600,7 +617,7 @@ export default function SubPage(props){
                     },
                     {
                         role:columnRole.twoColumn,
-                        left:"LOW FIDELITY WIREFRAME",
+                        left:"LOW FIDELITY<br/> WIREFRAME",
                         right:`I designed two types of dashboard that manage advertisements by clients and the system that can be controlled by the system developer.`
                     },
                     {
@@ -635,6 +652,8 @@ export default function SubPage(props){
             },
             {
                 title:"FINAL DESIGN",
+                titleClass:"color-brighter-green",
+                class:"conclusion-container",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -655,98 +674,93 @@ export default function SubPage(props){
                         contents:[
                             {
                                 desc:``,
+                                class:"font-24 weight-600",
                                 data:[
-                                    {role:dataRole.image, item:`/images/pr3/proto01.png`}
+                                    {
+                                        role:dataRole.imageWithDesc, 
+                                        item:`/images/pr3/proto01.png`,
+                                        class:"padding-top-50",
+                                        title:"Dashboard Main Page",
+                                        desc:`Approximate statistical revenue status and on/off of ongoing advertisements by the clients can be executed immediately.`
+
+                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Dashboard Main Page",
-                        class:"",
-                        contents:`Approximate statistical revenue status and on/off of ongoing advertisements by the clients can be executed immediately.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Manage Clients",
+                        desc:`This page manages the list of all advertising partners or clients that are currently managing. Also, register advertisements for each device, such as the online web, mobile web, or apps.`,
                         items:[
                             {item:"/images/pr3/proto02.png", class:""},
                             {item:"/images/pr3/proto03.png", class:""},
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Manage Clients",
-                        class:"",
-                        contents:`This page manages the list of all advertising partners or clients that are currently managing. Also, register advertisements for each device, such as the online web, mobile web, or apps.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Check Advertisements Statistics",
+                        desc:`Set each client ad type by time period to show statistics on the number of clicks and exposures. Revenue is determined by the count of exposure to ads, check the count of exposure and think about where to reposition online advertisements.`,
                         items:[
                             {item:"/images/pr3/proto04.png", class:""},
                             {item:"/images/pr3/proto05.png", class:""},
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Check Advertisements Statistics",
-                        class:"",
-                        contents:`Set each client ad type by time period to show statistics on the number of clicks and exposures. Revenue is determined by the count of exposure to ads, check the count of exposure and think about where to reposition online advertisements.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Check Revenue",
+                        desc:`The revenue of each advertiser can check on daily, monthly and yearly. It is highlighted in a graph to make it easy to see. Additionally, statistics on how much Internet users clicked on ads for the client also appear and shown on the graph.`,
                         items:[
                             {item:"/images/pr3/proto06.png", class:""},
                             {item:"/images/pr3/proto07.png", class:""},
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Check Revenue",
-                        class:"",
-                        contents:`The revenue of each advertiser can check on daily, monthly and yearly. It is highlighted in a graph to make it easy to see. Additionally, statistics on how much Internet users clicked on ads for the client also appear and shown on the graph.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Add and Check Any Size of Advertisements",
+                        desc:`A detailed management page for ads where advertisers can register ads on the page they want. Also, you can preview the advertisements they would like to register in the size they set it as, and they can also set how much of the advertisement they designated will be exposed to.`,
                         items:[
                             {item:"/images/pr3/proto08.png", class:""},
                             {item:"/images/pr3/proto09.png", class:""},
                         ]
                     },
                     {
-                        role:columnRole.center,
-                        title:"Add and Check Any Size of Advertisements",
-                        class:"",
-                        contents:`A detailed management page for ads where advertisers can register ads on the page they want. Also, you can preview the advertisements they would like to register in the size they set it as, and they can also set how much of the advertisement they designated will be exposed to.`
-                    },
-                    {
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
+                        class:"padding-top-50",
+                        gridDesc:true,
+                        descLegend:"Support Users",
+                        desc:`Each managed client can post questions about advertising registration, revenue calculation, and statistics to dashboard developers and get answers accordingly.`,
                         items:[
                             {item:"/images/pr3/proto10.png", class:""},
                             {item:"/images/pr3/proto11.png", class:""},
                         ]
                     },
-                    {
-                        role:columnRole.center,
-                        title:"Support Users",
-                        class:"",
-                        contents:`Each managed client can post questions about advertising registration, revenue calculation, and statistics to dashboard developers and get answers accordingly.`
-                    },
                 ]
             },    
         ]
-
-
     },
     {
         title:`WEB-NOVEL VIEWER<br/>WEBSITE`,
@@ -760,6 +774,7 @@ export default function SubPage(props){
         ],
         sections:[{                    
                 title:"RESEARCH",
+                titleClass:"color-blue",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -788,7 +803,7 @@ export default function SubPage(props){
                                     {
                                         role:dataRole.string, 
                                         image:"/images/pr4/face2.png",
-                                        item:`<b>Web Novel Reader:</b> It has been using other platforms or apps. However, those are uncomfortable that there are no detail functions to set for the viewer when reading a book.`
+                                        item:`<b>Web Novel Reader:</b> It has been using other platforms or apps. However, those are uncomfortable that there are no detail functions to set for the viewer when reading a book.<br/><br/><br/>`
                                     },
                                 ]
                             },
@@ -833,6 +848,7 @@ export default function SubPage(props){
             },
             {                    
                 title:"USER PERSONA",
+                titleClass:"color-blue",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -857,6 +873,7 @@ export default function SubPage(props){
             
             {                    
                 title:"DESIGN DEVELOPMENT",
+                titleClass:"color-blue",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -909,7 +926,7 @@ export default function SubPage(props){
                     },
                     {
                         role:columnRole.twoColumn,
-                        left:"LOW FIDELITY WIREFRAME",
+                        left:"LOW FIDELITY<br/> WIREFRAME",
                         right:`Two types of designs for both desktop and mobile for the web-novel users.`
                     },
                     {
@@ -918,10 +935,10 @@ export default function SubPage(props){
                         title:"Desktop",
                         items:[
                             {item:"/images/pr4/lowFi01_1.png", class:""},
-                            {item:"/images/pr4/lowFi01_2.png", class:""},
-                            {item:"/images/pr4/lowFi01_3.png", class:""},
-                            {item:"/images/pr4/lowFi01_4.png", class:""},
                             {item:"/images/pr4/lowFi01_5.png", class:""},
+                            {item:"/images/pr4/lowFi01_3.png", class:""},
+                            {item:"/images/pr4/lowFi01_2.png", class:""},
+                            {item:"/images/pr4/lowFi01_4.png", class:""},
                         ]
                     },
                     {
@@ -947,6 +964,7 @@ export default function SubPage(props){
             },
             {                    
                 title:"FINAL DESIGN",
+                titleClass:"color-blue",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -1012,6 +1030,7 @@ export default function SubPage(props){
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
                         class:"padding-top-50",
                         gridDesc:true,
                         descLegend:"Explore Novels of Each Genre",
@@ -1026,6 +1045,7 @@ export default function SubPage(props){
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
                         class:"padding-top-50",
                         gridDesc:true,
                         descLegend:"Create and Challenge",
@@ -1040,6 +1060,7 @@ export default function SubPage(props){
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
                         class:"padding-top-50",
                         gridDesc:true,
                         descLegend:"Recommend Keyword and Eye-catching Index of a Novel",
@@ -1054,6 +1075,7 @@ export default function SubPage(props){
                         role:columnRole.grid,
                         column:2,
                         title:"",
+                        gridClass:"scale-up",
                         class:"padding-top-50",
                         gridDesc:true,
                         descLegend:"User-friendly Viewer and My Page",
@@ -1149,6 +1171,8 @@ export default function SubPage(props){
             },
             {                    
                 title:"CONCLUSION & REFLECTION",
+                titleClass:"color-blue",
+                class:"conclusion-container",
                 contents:[
                     {
                         role:columnRole.center,
@@ -1173,6 +1197,7 @@ export default function SubPage(props){
         ],
         sections:[{                    
                 title:"RESEARCH",
+                titleClass:"color-bright-green",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -1249,6 +1274,7 @@ export default function SubPage(props){
             },
             {                    
                 title:"DESIGN DEVELOPMENT",
+                titleClass:"color-bright-green",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -1259,6 +1285,7 @@ export default function SubPage(props){
             },
             {                    
                 title:"RESEARCH",
+                titleClass:"color-bright-green",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -1351,6 +1378,7 @@ export default function SubPage(props){
             },
             {                    
                 title:"FINAL DESIGN",
+                titleClass:"color-bright-green",
                 contents:[
                     {
                         role:columnRole.twoColumn,
@@ -1460,7 +1488,7 @@ export default function SubPage(props){
                     },
                     {
                         role:columnRole.bisymetry,
-                        title:"Mobile Web App",
+                        title:"Mobile",
                         contents:[
                             {
                                 left:"<img src='/images/pr5/proto_mobile00.gif'/>",
@@ -1519,6 +1547,8 @@ export default function SubPage(props){
             },
             {                    
                 title:"CONCLUSION & REFLECTION",
+                titleClass:"color-bright-green",
+                class:"conclusion-container",
                 contents:[
                     {
                         role:columnRole.center,
@@ -1650,7 +1680,7 @@ export default function SubPage(props){
                 {
                     item.title != "" &&<p className="sub-section-grid-title">{item.title}</p>
                 }
-                <div className={`sub-section-grid-${item.column} `}>
+                <div className={`sub-section-grid-${item.column} ${item.gridClass}`}>
                     
                     {
                         item.items.map((v,key)=>{
@@ -1686,15 +1716,15 @@ export default function SubPage(props){
         return (
             <div className="sub-section-bisymetry">
                 <div className={`sub-section-bisymetry-title ${item.class}`}>{item.title}</div>
-                <div className="sub-section-bisymetry-contents">
+                <div className={`sub-section-bisymetry-contents `}>
                     {
                         item.contents.map((content,key)=>{
                             return(
-                                <div className="sub-section-bisymetry-content">
-                                    <div className={`sub-section-left sub-section-vertical-center`}>
+                                <div className={`sub-section-bisymetry-content ${content.class}-${key%2==0?"left":"right"}`}>
+                                    <div className={`sub-section-left sub-section-vertical-center `}>
                                         <div dangerouslySetInnerHTML={{__html:content.left}} />
                                     </div>
-                                    <div className={`sub-section-right sub-section-vertical-center`}>
+                                    <div className={`sub-section-right sub-section-vertical-center `}>
                                         <div dangerouslySetInnerHTML={{__html:content.right}} />
                                     </div>
                                 </div>
@@ -1735,7 +1765,7 @@ export default function SubPage(props){
                     data[props.match.params.id].sections.map((section, key)=>{
                         return (
                             <div>
-                                <div className="sub-section" key={key}>
+                                <div className={`sub-section ${section.titleClass} ${key+1 == data[props.match.params.id].sections.length ? section.class:""}`} key={key}>
                                     <p>{section.title}</p>
                                     <div className="sub-section-detail">
                                         {
