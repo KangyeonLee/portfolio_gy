@@ -45,15 +45,15 @@ export default function SubPage(props){
                             data:[
                                 {
                                     role:dataRole.string, 
-                                    image:"/images/pr1/face1.png",
+                                    image:`${process.env.PUBLIC_URL}/images/pr1/face1.png`,
                                     item:`<b>Supervisor:</b> He controls one production line, and it is difficult to quickly catch the problems of whether there are insufficient materials, missing parts or whether the production line stopped every time.`},
                                 {
                                     role:dataRole.string, 
-                                    image:"/images/pr1/face2.png",
+                                    image:`${process.env.PUBLIC_URL}/images/pr2/face1.png`,
                                     item:`<b>Employee 1:</b> He works in the sales department, and he has to receive the work status right away from the development and QA departments, but if he could not know the status of one production line part, the status report will delay.`},
                                 {
                                     role:dataRole.string, 
-                                    image:"/images/pr1/face3.png",
+                                    image:`${process.env.PUBLIC_URL}/images/pr3/face1.png`,
                                     item:`<b>Employee 2:</b> She manages the material on the handle side of the bag, but the process of work with other employees. She is also important, so she has to check in real-time which materials are missing.`}
                             ]
                         },
@@ -558,7 +558,7 @@ export default function SubPage(props){
                             data:[
                                 {
                                     role:dataRole.string, 
-                                    image:"/images/pr1/face3.png",
+                                    image:`${process.env.PUBLIC_URL}/images/pr1/face3.png`,
                                     item:`<b>Client’s worker:</b> He manages advertisements for mobile devices and advertisements on websites. However, after registering advertisements, it is too difficult to recognize which device the ad is on for each size. Also, It is too complicated to check out the profits from online advertising.<br/><br/><br/>`
                                 },
                             ]
@@ -797,12 +797,12 @@ export default function SubPage(props){
                                 data:[
                                     {
                                         role:dataRole.string, 
-                                        image:"/images/pr4/face1.png",
+                                        image:`${process.env.PUBLIC_URL}/images/pr4/face1.png`,
                                         item:`<b>Book Reader:</b> It is often overwhelming to carry thick and heavy books as well it is hard to store increasing books in the house.`
                                     },
                                     {
                                         role:dataRole.string, 
-                                        image:"/images/pr4/face2.png",
+                                        image:`${process.env.PUBLIC_URL}/images/pr4/face2.png`,
                                         item:`<b>Web Novel Reader:</b> It has been using other platforms or apps. However, those are uncomfortable that there are no detail functions to set for the viewer when reading a book.<br/><br/><br/>`
                                     },
                                 ]
@@ -1221,12 +1221,12 @@ export default function SubPage(props){
                                 data:[
                                     {
                                         role:dataRole.string, 
-                                        image:"/images/pr5/face1.png",
+                                        image:`${process.env.PUBLIC_URL}/images/pr5/face1.png`,
                                         item:`<b>Parents:</b> I wanted to apply for an English class for my son, but it was inconvenient that I could not see the detailed course description, and it was uncomfortable that I always had to use the phone when I registered.`
                                     },
                                     {
                                         role:dataRole.string, 
-                                        image:"/images/pr5/face2.png",
+                                        image:`${process.env.PUBLIC_URL}/images/pr5/face2.png`,
                                         item:`<b>Student:</b> The place where I take the class is very far away, so I would like to take the lecture online.`
                                     },
                                 ]
