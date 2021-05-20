@@ -452,18 +452,18 @@ export default function SubPage(props){
                         column:3,
                         title:"HIGH FIDELITY MOCKUP",
                         items:[
-                            {item:"/images/pr2/sub01.jpg", class:""},
-                            {item:"/images/pr2/sub02.jpg", class:""},
-                            {item:"/images/pr2/sub03.jpg", class:""},
-                            {item:"/images/pr2/sub05.jpg", class:""},
-                            {item:"/images/pr2/sub06.jpg", class:""},
-                            {item:"/images/pr2/sub07.jpg", class:""},
-                            {item:"/images/pr2/sub08.jpg", class:""},
-                            {item:"/images/pr2/sub09.jpg", class:""},
-                            {item:"/images/pr2/sub10.jpg", class:""},
-                            {item:"/images/pr2/sub11.jpg", class:""},
-                            {item:"/images/pr2/sub13.jpg", class:""},
-                            {item:"/images/pr2/sub15.jpg", class:""},
+                            {item:"/images/pr2/sub01.png", class:""},
+                            {item:"/images/pr2/sub02.png", class:""},
+                            {item:"/images/pr2/sub03.png", class:""},
+                            {item:"/images/pr2/sub05.png", class:""},
+                            {item:"/images/pr2/sub06.png", class:""},
+                            {item:"/images/pr2/sub07.png", class:""},
+                            {item:"/images/pr2/sub08.png", class:""},
+                            {item:"/images/pr2/sub09.png", class:""},
+                            {item:"/images/pr2/sub10.png", class:""},
+                            {item:"/images/pr2/sub11.png", class:""},
+                            {item:"/images/pr2/sub13.png", class:""},
+                            {item:"/images/pr2/sub15.png", class:""},
                         ]
                     },
                     {
@@ -520,7 +520,7 @@ export default function SubPage(props){
         advertisement</b> that the web, <br/>
         mobile, and apps' <br/>
         advertisement business.`,
-        titleImage:"/images/pr3/adknowva_dashboard_hero.jpg",
+        titleImage:"/images/pr3/adknowva_dashboard_hero.png",
         properties:[
             {type:"PROJECT TYPE",data:["Desktop"]},
             {type:"ROLE",data:["Project designer"]},
@@ -765,7 +765,7 @@ export default function SubPage(props){
     {
         title:`WEB-NOVEL VIEWER<br/>WEBSITE`,
         titleDescription:`This web application <b>provides a viewer for web-novels.</b> Users can join that site through this site, as well as the users can manage and readable the books and web-novels what are they save up or purchase.`,
-        titleImage:"/images/pr4/webnovel_hero.jpg",
+        titleImage:"/images/pr4/webnovel_hero.png",
         properties:[
             {type:"PROJECT TYPE",data:["Desktop/Mobile"]},
             {type:"ROLE",data:["Project designer"]},
@@ -1188,7 +1188,7 @@ export default function SubPage(props){
     {
         title:`DEA-GU ENGLISH <br/>VILLAGE`,
         titleDescription:`This web app is <b>managed students' schedule</b> of English village through the web, mobile site`,
-        titleImage:"/images/pr5/dgev_hero.jpg",
+        titleImage:"/images/pr5/dgev_hero.png",
         properties:[
             {type:"PROJECT TYPE",data:["Desktop/Mobile"]},
             {type:"ROLE",data:["Project designer"]},
@@ -1398,8 +1398,8 @@ export default function SubPage(props){
                         column:2,
                         title:"",
                         items:[
-                            {item:"/images/pr5/dgev_style Guide01.jpg", class:""},
-                            {item:"/images/pr5/dgev_style Guide02.jpg", class:""},
+                            {item:"/images/pr5/dgev_style_Guide01.png", class:""},
+                            {item:"/images/pr5/dgev_style_Guide02.png", class:""},
                         ]
                     },
                     {
@@ -1409,7 +1409,7 @@ export default function SubPage(props){
                             {
                                 desc:``,
                                 data:[
-                                    {role:dataRole.image, item:`/images/pr5/hifi.jpg`}
+                                    {role:dataRole.image, item:`/images/pr5/hifi.png`}
                                 ]
                             }
                         ]
