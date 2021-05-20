@@ -49,11 +49,11 @@ export default function SubPage(props){
                                     item:`<b>Supervisor:</b> He controls one production line, and it is difficult to quickly catch the problems of whether there are insufficient materials, missing parts or whether the production line stopped every time.`},
                                 {
                                     role:dataRole.string, 
-                                    image:`${process.env.PUBLIC_URL}/images/pr2/face1.png`,
+                                    image:`${process.env.PUBLIC_URL}/images/pr1/face2.png`,
                                     item:`<b>Employee 1:</b> He works in the sales department, and he has to receive the work status right away from the development and QA departments, but if he could not know the status of one production line part, the status report will delay.`},
                                 {
                                     role:dataRole.string, 
-                                    image:`${process.env.PUBLIC_URL}/images/pr3/face1.png`,
+                                    image:`${process.env.PUBLIC_URL}/images/pr1/face3.png`,
                                     item:`<b>Employee 2:</b> She manages the material on the handle side of the bag, but the process of work with other employees. She is also important, so she has to check in real-time which materials are missing.`}
                             ]
                         },
