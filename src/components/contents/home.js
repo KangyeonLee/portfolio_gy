@@ -5,34 +5,34 @@ import '../../css/home.css'
 export default function Home(){
     const [content, setContent] = useState([
         {id:0, title:"HEIDI MANUFACTURING SOLUTION SYSTEM", 
-        img:"/images/01 heidi_thumb.png",
+        img:"/images/01_heidi_thumb.png",
         hoverImg:"/images/heidi_thumb_hover.png",
         hoverText:"HEIDI MANUFACTURING SOLUTION SYSTEM",
         type:"Desktop / Mobile",
         description:"This web app is a dashboard that helps employees to operate process management systems more efficiently"},
         {id:1, title:"HEIDI OFFICIAL WEBSITE",
-        img:"/images/02 heidi__website_thumb.png",
+        img:"/images/02_heidi_website_thumb.png",
         hoverImg:"/images/heidi_web_thumb_hover.png",
         hoverText:"HEIDI SOLUTION SYSTEM PROMOTE WEBSITE",
         type:"Desktop / Mobile",
         description:"A web app design intended for the company HEIDI introduction"
         },
         {id:2, title:"adKnowva AD MANAGE SYSTEM",
-        img:"/images/03 adknowva_dashboard_thumb.png",
+        img:"/images/03_adknowva_dashboard_thumb.png",
         hoverImg:"/images/adknowva_thumb_hover.png",
         hoverText:"ADKNOWVA ADVERTISEMENT MANAGE DASHBOARD",
         type:"Desktop",
         description:"Web application design for advertisement management of the web, mobile and apps"
         },
         {id:3, title:"WEB-NOVEL VIEWER",
-        img:"/images/05 webnovel_thumb.png",
+        img:"/images/05_webnovel_thumb.png",
         hoverImg:"/images/webnovel_thumb_hover.png",
         hoverText:"ONLINE WEB-NOVEL VIEWER",
         type:"Desktop / Mobile",
         description:"A web-novel reader app designed for both desktop and mobile."
         },
         {id:4, title:"DEA-GU ENGLISH VILLAGE",
-        img:"/images/02 heidi__website_thumb.png",
+        img:"/images/02_heidi_website_thumb.png",
         hoverImg:"/images/dgev_thumb_hover.png",
         hoverText:"DEA-GU KYEONGBUK ENGLISH VE VILLAGE WEBSITE",
         type:"Desktop / Mobile",
@@ -88,7 +88,7 @@ export default function Home(){
                                                 </div>
                                             </div>
                                             <div className="content-hover-container">
-                                                <img src={v.hoverImg}/>
+                                                <img src={process.env.PUBLIC_URL+v.hoverImg}/>
                                                 <p>{v.hoverText}</p>
                                             </div>
                                             </Link>
@@ -118,7 +118,7 @@ export default function Home(){
                                                 </div>
                                             </div>
                                             <div className="content-hover-container">
-                                                <img src={v.hoverImg}/>
+                                                <img src={process.env.PUBLIC_URL+v.hoverImg}/>
                                                 <p>{v.hoverText}</p>
                                             </div>
                                             </Link>

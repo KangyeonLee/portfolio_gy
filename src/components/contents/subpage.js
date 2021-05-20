@@ -13,7 +13,7 @@ export default function SubPage(props){
         <b>more efficiently and save time</b><br/>
         as well as it promotes through <br/>
         the own website.<br/>`,
-        titleImage:"/images/pr1/hero.jpg",
+        titleImage:"/images/pr1/hero.png",
         properties:[
             {type:"PROJECT TYPE",data:["Desktop/Mobile"]},
             {type:"ROLE",data:["Project designer","Projuect sub manager"]},
@@ -271,23 +271,23 @@ export default function SubPage(props){
                         title:"Mobile",
                         contents:[
                             {
-                                left:"<video muted autoplay loop><source src='/images/pr1/proto_mobile01.mov'/></video>",
+                                left:`<video muted autoplay loop><source src='${process.env.PUBLIC_URL}/images/pr1/proto_mobile01.mov'/></video>`,
                                 right:`<b>Intro and Sign Up</b><br/><br/>During the sign-up process, the user will divide into supervisor and employee. Assign their own employee number to the user in this step.`
                             },
                             {
                                 left:`<b>Main Page and Navigation</b><br/><br/>Each employee can only check the work status of their production line. In the case of a supervisor, there is a menu where they can register the order status or work status, but ordinary factory employees can only check the work status.`,
-                                right:`<video muted autoplay loop><source src='/images/pr1/proto_mobile02.mov'/></video>`
+                                right:`<video muted autoplay loop><source src='${process.env.PUBLIC_URL}/images/pr1/proto_mobile02.mov'/></video>`
                             },
                             {
-                                left:`<img src='/images/pr1/proto_mobile03.gif'/>`,
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr1/proto_mobile03.gif'/>`,
                                 right:`<b>Total Quality Management</b><br/><br/>Check and register the insufficient quantity of materials and production parts, the completion time of test report or production, and verification processing (menu available for supervisor).`
                             },
                             {
                                 left:`<b>Manage OrderList</b><br/><br/>Can order subsidiary materials requirements for the production line, and register and verify detailed information on the order and the product produced (etc. bag).`,
-                                right:`<img src='/images/pr1/proto_mobile04.gif'/>`
+                                right:`<img src='${process.env.PUBLIC_URL}/images/pr1/proto_mobile04.gif'/>`
                             },
                             {
-                                left:`<img src='/images/pr1/proto_mobile05.gif'/>`,
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr1/proto_mobile05.gif'/>`,
                                 right:`<b>My Page and Check Incentive</b><br/><br/>Check the holidays, absence from work, sick leave, and performance-based payment the detail, and may check problems, penalty points, and alarms of the employee's part.`
                             }
                         ]
@@ -477,7 +477,7 @@ export default function SubPage(props){
                         contents:[
                             {
                                 class:"bisymetry-sm-lg",
-                                left:"<img src='/images/pr2/prototype01.gif'/>",
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr2/prototype01.gif'/>`,
                                 right:`<b>Simplify Main Page</b><br/><br/>
                                 A brief introduction to the HEIDI project and an overall functional description of the process management system.`
                             },
@@ -485,11 +485,11 @@ export default function SubPage(props){
                                 class:"bisymetry-sm-lg",
                                 left:`<b>Explain Business</b><br/><br/>
                                 Help users be aware of the reason why HEIDI's business is needed and the convenience and benefits of the production system it will bring.`,
-                                right:`<img src='/images/pr2/prototype02.gif'/>`
+                                right:`<img src='${process.env.PUBLIC_URL}/images/pr2/prototype02.gif'/>`
                             },
                             {
                                 class:"bisymetry-sm-lg",
-                                left:"<img src='/images/pr2/prototype03.gif'/>",
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr2/prototype03.gif'/>`,
                                 right:`<b>Description Management System</b><br/><br/>
                                 Explains the detailed feature of the process management system and the role of each menu to the user. It refers to dashboard images and descript the feature convenient to users using visual assist.`
                             },
@@ -497,11 +497,11 @@ export default function SubPage(props){
                                 class:"bisymetry-sm-lg",
                                 left:`<b>About HEIDI</b><br/><br/>
                                 It is a page that shows users about HEIDI's corporate ideology and company.`,
-                                right:`<img src='/images/pr2/prototype04.gif'/>`
+                                right:`<img src='${process.env.PUBLIC_URL}/images/pr2/prototype04.gif'/>`
                             },
                             {
                                 class:"bisymetry-sm-lg",
-                                left:"<img src='/images/pr2/prototype05.gif'/>",
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr2/prototype05.gif'/>`,
                                 right:`<b>Support Pages</b><br/><br/>
                                 It is a page that runs a customer center and questions about business features.`
                             }
@@ -1093,14 +1093,14 @@ export default function SubPage(props){
                         class:"font-24 weight-600",
                         contents:[
                             {
-                                left:"<img src='/images/pr4/webnovel_proto01.gif'/>",
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr4/webnovel_proto01.gif'/>`,
                                 right:`<b>Intro and Sign Up</b><br/><br/>
                                 During the sign-up process, the user should set up the keyword what will appear genre follow the user’s setting on the main page.`
                             },
                             {
                                 left:`<b>Simplify Main Page</b><br/><br/>
                                 Overall novel thumbnails which grab user’s Interests or preference.  As well, List popular novels in each section placed on the main page so the user can find them right away at once.`,
-                                right:`<img src='/images/pr4/webnovel_proto02.gif'/>`
+                                right:`<img src='${process.env.PUBLIC_URL}/images/pr4/webnovel_proto02.gif'/>`
                             },
                         ]
                     },
@@ -1137,7 +1137,7 @@ export default function SubPage(props){
                         title:"",
                         contents:[
                             {
-                                left:"<img src='/images/pr4/webnovel_proto07.gif'/>",
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr4/webnovel_proto07.gif'/>`,
                                 right:`<b>Eye-catching Index of a Novel</b><br/><br/>
                                 In Novel Content, users can set up, purchase, and receive alarms whenever a session is uploaded. Users can donate to the author, purchase, manage, and comments on the episode. The list includes interesting thumbnail images of every episode for the user's enjoyment.`
                             },
@@ -1163,7 +1163,7 @@ export default function SubPage(props){
                         contents:[
                             {
                                 left:`<b>My Page </b><br/><br/>Mypage provides the ability to check and manage purchased novels and comments and to post personal web novels.`,
-                                right:`<img src='/images/pr4/webnovel_proto10.gif'/>`
+                                right:`<img src='${process.env.PUBLIC_URL}/images/pr4/webnovel_proto10.gif'/>`
                             },
                         ]
                     },
@@ -1491,14 +1491,14 @@ export default function SubPage(props){
                         title:"Mobile",
                         contents:[
                             {
-                                left:"<img src='/images/pr5/proto_mobile00.gif'/>",
+                                left:`<img src='${process.env.PUBLIC_URL}/images/pr5/proto_mobile00.gif'/>`,
                                 right:`<b>Main Page</b><br/><br/>
                                 Made to feel similar to a mobile app and selected the menus that users need most and briefly organized the menus to represent them in an icon format. Users can view the notice right away.`
                             },
                             {
                                 left:`<b>About Deagu-Gyungbuk English Village</b><br/><br/>
                                 There are the founding ideology of Daegu, Gyeongbuk English Village, greetings from the president of the academy, and detailed information pages of the academy facilities.`,
-                                right:`<img src='/images/pr5/proto_mobile01.gif'/>`
+                                right:`<img src='${process.env.PUBLIC_URL}/images/pr5/proto_mobile01.gif'/>`
                             },
                         ]
                     },
@@ -1645,7 +1645,7 @@ export default function SubPage(props){
     const oneLinePicture = (content, key)=>{
         return ( // picture needs to be centerized
             <div>
-                <img src={content.item} style={{maxWidth:'1000px', width:'100%', display:'block', margin:'0 auto', paddingTop: key!=0 ?'50px' : ""}}/>
+                <img src={process.env.PUBLIC_URL+content.item} style={{maxWidth:'1000px', width:'100%', display:'block', margin:'0 auto', paddingTop: key!=0 ?'50px' : ""}}/>
                 {
                     content.dataRole == content.role.imageWithDesc && 
                     <div className="sub-section-center">
@@ -1664,7 +1664,7 @@ export default function SubPage(props){
                     content.items.map((item,key)=>{
                         return (
                             <div className={`sub-section-detail-images-item ${content.class}`} key={key}>
-                                <img src={item.src}/>
+                                <img src={process.env.PUBLIC_URL+item.src}/>
                                 <div dangerouslySetInnerHTML={{__html:item.desc}}/>
                             </div>
                         )
@@ -1686,7 +1686,7 @@ export default function SubPage(props){
                         item.items.map((v,key)=>{
                             return(
                                 <div className="sub-section-grid-item" key={key}>
-                                    <img src={v.item} className={v.class}/>
+                                    <img src={process.env.PUBLIC_URL+v.item} className={v.class}/>
                                 </div>
                             )
                         })
@@ -1745,7 +1745,7 @@ export default function SubPage(props){
                 </div>
             </div>
             <div className="sub-title-image">
-                <img src={data[props.match.params.id].titleImage} />
+                <img src={process.env.PUBLIC_URL+data[props.match.params.id].titleImage} />
             </div>
             <div className="sub-component">
                 <div className="sub-project-properties">
