@@ -1,6 +1,6 @@
 import react from 'react'
 import ReactDOM from "react-dom";
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import '../../css/header.css'
 
@@ -10,7 +10,9 @@ export default function header(){
         <div className="header-container">
             <div className="header">
                 <div className="header-left">
-                    <img src={process.env.PUBLIC_URL+"/images/gy_logo02.jpg"} className="header-logo"/>
+                    <Link to="/home">
+                        <img src={process.env.PUBLIC_URL+"/images/gy_logo02.jpg"} className="header-logo"/>
+                    </Link>
                 </div>
                 <div className="header-right">
                     <ul className="header-nav">
@@ -21,7 +23,7 @@ export default function header(){
                             <NavLink to="/about" activeClassName="selected">ABOUT</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/resume" activeClassName="selected">RESUME</NavLink>
+                            <a href={`${process.env.PUBLIC_URL}/Resume_Gangyeon_Lee.pdf`} target="_blank">RESUME</a>
                         </li>
                     </ul>
                 </div>

@@ -43,13 +43,16 @@
 .about-title{
     font-size: 28px;
     color: #1F1F22;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    font-weight: 600;
 }
 
 .about-details{
     padding-bottom: 50px;
+    line-height: 150%;
     font-size: 14px;
     color: #1F1F22;
+    font-weight: 400;
 }
 
 .about-details>p{
@@ -70,11 +73,13 @@
     color: #989AA4;
     font-size: 16px;
     padding-bottom: 20px;
+    font-weight: 500;
 }
 
 .about-skill-detail{
     color: #3E3F44;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .about-skill-detail>p{

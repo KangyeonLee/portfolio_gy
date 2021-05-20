@@ -42,6 +42,7 @@
     display: inline;
     padding-left: 50px;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .header-nav>li>a{
@@ -53,4 +54,11 @@
 .header-nav>li>a.selected{
     color: #7368FF;
     cursor: pointer;
+    font-weight: 500;
+}
+
+.header-nav>li>a:hover{
+    color: #7368FF;
+    cursor: pointer;
+    font-weight: 500;
 }
