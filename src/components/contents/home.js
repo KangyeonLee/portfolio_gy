@@ -32,7 +32,7 @@ export default function Home(){
         description:"A web-novel reader app designed for both desktop and mobile."
         },
         {id:4, title:"DEA-GU ENGLISH VILLAGE",
-        img:"/images/02_heidi_website_thumb.png",
+        img:"/images/06_degv_thumb.png",
         hoverImg:"/images/dgev_thumb_hover.png",
         hoverText:"DEA-GU KYEONGBUK ENGLISH VE VILLAGE WEBSITE",
         type:"Desktop / Mobile",
