@@ -10,7 +10,7 @@ import Footer from './footer/footer'
 
 export default function Layout(){
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div>
                 <Header></Header>
                 <Route path="/home" component={Home}/>
