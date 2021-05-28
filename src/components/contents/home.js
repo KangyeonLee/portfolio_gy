@@ -43,16 +43,18 @@ export default function Home(){
     return (
         <div className="home-container">
             <div className="home-content">
-                <div className="home-greetings">
-                    <b>This is <div className="home-color">Gangyeon Lee</div></b>
-                    
+                <div  className="home-greetings-container">
+                    <div className="home-greetings">
+                        <b>This is <div className="home-color">Gangyeon Lee</div></b>
                         
-                    
-                    <br/>
-                    I am a curious observer,<br/>
-                    obsessed with creation,<br/>
-                    teams' lubricant,<br/>
-                    and a <div className="home-color">UX/UI designer.</div>
+                            
+                        
+                        <br/>
+                        I am a curious observer,<br/>
+                        obsessed with creation,<br/>
+                        teams' lubricant,<br/>
+                        and a <div className="home-color">UX/UI designer.</div>
+                    </div>
                 </div>
                 <div className="home-button-container">
                     <a href="mailto:kangyeon.lee.alicia@gmail.com">

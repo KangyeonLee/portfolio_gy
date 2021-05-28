@@ -7,12 +7,12 @@ export default function SubPage(props){
     const [data, setData] = useState([
         {
         title:`HEIDI<br/>MANUFACTURING<br/>SOLUTION SYSTEM`,
-        titleDescription:`This web app that dashboard<br/>
-        helps employees operate<br/>
-        <b>process management systems</b><br/>
-        <b>more efficiently and save time</b><br/>
-        as well as it promotes through <br/>
-        the own website.<br/>`,
+        titleDescription:`This web app that dashboard
+        helps employees operate
+        <b>process management systems</b>
+        <b>more efficiently and save time</b>
+        as well as it promotes through 
+        the own website.`,
         titleImage:"/images/pr1/hero.png",
         properties:[
             {type:"PROJECT TYPE",data:["Desktop/Mobile"]},
@@ -325,10 +325,10 @@ export default function SubPage(props){
     },
     {
         title:`HEIDI WEBSITE`,
-        titleDescription:`This web app <b>promotes the <br/>
-        manufacturing system</b> that <br/>
-        helps employees operate <br/>
-        process management systems <br/>
+        titleDescription:`This web app <b>promotes the 
+        manufacturing system</b> that 
+        helps employees operate 
+        process management systems 
         more efficiently and save time.`,
         titleImage:"/images/pr2/heidi_website_hero.jpg",
         properties:[
@@ -514,11 +514,11 @@ export default function SubPage(props){
     },
     {
         title:`adKnowva<br/>MANAGEMENT<br/>SYSTEM`,
-        titleDescription:`This web application is <br/>
-        <b>managed revenue and <br/>
-        controlled by adding <br/>
-        advertisement</b> that the web, <br/>
-        mobile, and apps' <br/>
+        titleDescription:`This web application is 
+        <b>managed revenue and 
+        controlled by adding 
+        advertisement</b> that the web, 
+        mobile, and apps' 
         advertisement business.`,
         titleImage:"/images/pr3/adknowva_dashboard_hero.png",
         properties:[
